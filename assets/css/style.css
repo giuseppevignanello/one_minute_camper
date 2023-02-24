@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+#sky {
+    height: calc(100vh - 100px);
+    background-color: skyblue;
+    position: relative;
+}
+
+#sky #camper {
+   width: 300px;
+   position: absolute;
+   bottom: -67px;
+   right: 95%;
+   animation: move 60s infinite linear;
+   
+}
+
+@keyframes move {
+    0% {
+    bottom: -67px;
+    right: 95%;
+
+    }
+
+    100% {
+    bottom: -67px;
+    right: 0;
+    }
+}
+
+#ground {
+    height: 100px;
+    background-color: burlywood;
+}
+
